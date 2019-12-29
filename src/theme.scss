@@ -1,0 +1,84 @@
+.theme {
+  display: grid;
+
+  @media (min-width: 1024px) {
+    display: grid;
+  }
+
+  &_color {
+    &_project-default {
+      --default: #FFFFFF;
+      --accent: #ffcc00;
+      --border: #000000;
+      --text-primary: #000000;
+      --text-secondary: rgba(0, 0, 0, 0.6);
+      --text-additional: rgba(0, 0, 0, 0.3);
+      --text-link: #0077ff;
+    }
+
+    &_project-brand {
+      --default: #0077ff;
+      --accent: #FFFFFF;
+      --border: #FFFFFF;
+      --text-primary: #FFFFFF;
+      --text-secondary: rgba(255, 255, 255, 0.6);
+      --text-additional: rgba(255, 255, 255, 0.3); 
+      --text-link: #FFFFFF;
+    }
+
+    &_project-inverse {
+      --default: #000000;
+      --accent: #FFFFFF;
+      --border: #FFFFFF;
+      --text-primary: #FFFFFF;
+      --text-secondary: rgba(255, 255, 255, 0.6);
+      --text-additional: rgba(255, 255, 255, 0.3);
+      --text-link: #0077ff;
+    }
+
+    &_project-warning {
+      --default: #ff3333;
+      --accent: #FFFFFF;
+      --border: #ff3333;
+      --text-primary: #FFFFFF;
+      --text-secondary: rgba(255, 255, 255, 0.6);
+      --text-additional: rgba(255, 255, 255, 0.3); 
+      --text-link: #FFF;
+    }
+  }
+
+  &_size_default {
+    --text-s: 8px;
+    --text-m: 10px;
+    --text-l: 11px;
+    --text-xl: 13px;
+    --text-xxl: 16px;
+    --line-height-s: 21px; /* where????*/
+    --line-height-m: 25px;
+    --line-height-l: 28px;
+    --line-height-xl: 34px;
+    --line-height-xxl: 38px;
+  }
+
+  &_space_default {
+    --space-xxxs: 3px;
+    --space-xxs: 6px;
+    --space-xs: 9px;
+    --space-s: 15px;
+    --space-m: 18px;
+    --space-l: 24px;
+    --space-xl: 27px;
+    --space-xxl: 36px;
+    --space-xxxl: 45px;
+    --space-xxxxl: 51px;
+    --space-xxxxxl: 72px;
+  }
+
+  &_gap_small {
+    --gap: var(--space-s);
+  
+    @media (min-width: 1024px) {
+      --gap: var(--space-xl);
+    }
+  }
+}

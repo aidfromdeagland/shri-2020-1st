@@ -1,0 +1,42 @@
+.card {
+  display: grid;
+  
+  &_border_all {
+    border: 3px solid var(--border);
+  }
+
+  &_view_default {
+    background-color: var(--default);
+  }
+
+  &__content {
+    display: grid;
+    
+    &_distribute_center {
+      justify-content: center;
+    }
+
+    &_vertical-align {
+      align-items: center;
+    }
+
+    &_space-a {
+      &_m {
+        padding: var(--space-m);
+      }
+
+      &_l {
+        padding: var(--space-l);
+      }
+
+      &_xl {
+        padding: var(--space-xl);
+      }
+
+      &_xxl {
+        padding: var(--space-xxl);
+      }
+    }
+  }
+
+}
