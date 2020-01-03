@@ -1,0 +1,20 @@
+.history {
+  border-width: 3px;
+
+  &__show {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__hide {
+    
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

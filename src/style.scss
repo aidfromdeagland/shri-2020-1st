@@ -1,4 +1,4 @@
-@use 'scaffolding';
+@use 'normalize';
 @use 'theme';
 @use 'layout';
 @use 'grid';
@@ -15,3 +15,14 @@
 @use 'button';
 @use 'input';
 @use 'image';
+@use 'payment';
+@use 'warning';
+@use 'product';
+@use 'history';
+@use 'e-accordion';
+@use 'cover';
+@use 'event';
+@use 'header';
+@use 'onoffswitch';
+@use 'footer';
+

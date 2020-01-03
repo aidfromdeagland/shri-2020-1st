@@ -1,10 +1,12 @@
 .icon-plus {
+  display: flex;
+
   &_vertical-align_center {
-    vertical-align: middle;
+    align-items: center;
   }
 
   &__icon {
-    display: grid;
+    display: block;
 
     &_indent-r {
       &_s {
@@ -22,6 +24,6 @@
   }
 
   &__block {
-    display: grid;   /*is it necessary?*/
+    display: block;   /*is it necessary?*/
   }
 }

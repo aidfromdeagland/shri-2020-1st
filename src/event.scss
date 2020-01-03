@@ -1,0 +1,24 @@
+.event {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }  
+
+  &__preview {
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--space-xs);
+    justify-content: center;
+    margin-bottom: var(--space-xxl);
+  }
+
+  &__title {
+    margin-bottom: var(--space-s);
+  }
+}

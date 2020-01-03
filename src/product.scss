@@ -1,0 +1,13 @@
+.product {
+  display: block;
+  min-height: 300px;
+  border-width: 3px;
+
+  &__image {
+    width: 100%;
+  }
+
+  & .image {
+    height: 160px;
+  }
+}

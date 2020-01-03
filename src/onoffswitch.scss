@@ -1,0 +1,19 @@
+.onoffswitch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 97px;
+  height: 32px;
+  padding: 2px;
+  border: 2px solid var(--border);
+
+  &__button {
+    width: 24px;
+    height: 24px;
+    background-color: var(--border);
+  }
+
+  &_checked {
+    justify-content: flex-end;
+  }
+}

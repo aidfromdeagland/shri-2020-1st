@@ -1,14 +1,21 @@
 .text {
-  display: grid; 
+  display: block;
 
   &_align_center {
-    justify-content: center;
+    text-align: center;
+  }
+
+  &__word {
+    display: inline-block;
   }
 
   &_size {
     &_s {
+      line-height: var(--line-height-s);
+
       & .text__word {
         height: var(--text-s);
+        
       }
 
       & .text__word_width {
@@ -27,6 +34,8 @@
     }
 
     &_m {
+      line-height: var(--line-height-m);
+
       & .text__word {
         height: var(--text-m);
       }
@@ -47,6 +56,8 @@
     }
 
     &_l {
+      line-height: var(--line-height-l);
+
       & .text__word {
         height: var(--text-l);
       }
@@ -67,6 +78,8 @@
     }
 
     &_xl {
+      line-height: var(--line-height-xl);
+      
       & .text__word {
         height: var(--text-xl);
       }
@@ -87,6 +100,8 @@
     }
 
     &_xxl {
+      line-height: var(--line-height-xxl);
+
       & .text__word {
         height: var(--text-xxl);
       }
@@ -122,6 +137,24 @@
 
     &_p {
       margin: 15px 0 21px;
+    }
+  }
+
+  &_view {
+    &_primary .text__word {
+      background-color: var(--text-primary);
+    }
+
+    &_secondary .text__word {
+      background-color: var(--text-secondary);
+    }
+
+    &_ghost .text__word {
+      background-color: var(--text-additional);
+    }
+
+    &_link .text__word {
+      background-color: var(--text-link);
     }
   }
 }

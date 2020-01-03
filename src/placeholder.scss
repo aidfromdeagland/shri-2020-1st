@@ -1,4 +1,5 @@
 .placeholder {
+  display: block;
   background-color: var(--text-primary); /* По умолчанию имеет такой же цвет фона как и цвет основного текста. ? is modificator _view_primary useless?? */
 
   &_size_m {

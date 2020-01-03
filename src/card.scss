@@ -1,5 +1,6 @@
 .card {
-  display: grid;
+  position: relative;
+  display: block;
   
   &_border_all {
     border: 3px solid var(--border);
@@ -10,7 +11,8 @@
   }
 
   &__content {
-    display: grid;
+    position: relative;
+    display: flex;
     
     &_distribute_center {
       justify-content: center;
@@ -36,7 +38,53 @@
       &_xxl {
         padding: var(--space-xxl);
       }
+
+      &_xxxl {
+        padding: var(--space-xxxl);
+      }
     }
   }
 
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+    &_distribute {
+      &_between {
+        align-items: space-between;
+      }
+
+      &_center {
+        align-items: center;
+      }
+
+      &_right {
+        align-items: flex-end;
+      }
+    }
+
+    &_vertical-align_center {
+      justify-content: center;
+    }
+
+    &_space-a {
+      &_m {
+        padding: var(--space-m);
+      }
+
+      &_l {
+        padding: var(--space-l);
+      }
+
+      &_xl {
+        padding: var(--space-xl);
+      }
+
+      &_xxl {
+        padding: var(--space-xxl);
+      }
+    }
+  }
 }

@@ -1,8 +1,5 @@
 .list {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-flow: row;
-  
+  display: block;
   
   &_border_all {
     border: 3px solid var(--border);
@@ -13,7 +10,8 @@
   }
 
   &__item {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
     &_border {
       &_bottom {
@@ -35,6 +33,10 @@
 
     &_indent-t_m {
       margin-top: var(--space-m);
+
+      &.history__show {
+      margin-top: 0;
+      }
     }
 
     &_indent-b {

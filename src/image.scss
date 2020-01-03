@@ -1,4 +1,7 @@
 .image {
   width: 100%;
-  border: 3px solid var(--border);
+  border: 3px solid var(--default);
+  background-color: var(--default);
+  background-repeat: no-repeat;
+  background-position: center;
 }

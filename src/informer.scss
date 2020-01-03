@@ -1,5 +1,6 @@
 .informer {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 
   &_border_all {
     border: 3px solid var(--border);
@@ -10,7 +11,10 @@
   }
 
   &__content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 
     &_distribute {
       &_default {
@@ -22,23 +26,23 @@
       }
 
       &_center {
-        justify-content: center;
+        justify-items: center;
       }
     }
 
     &_space-a {
       &_xl {
-        padding: var(--xl);
+        padding: var(--space-xl);
       }
 
       &_xxl {
-        padding: var(--xxl);
+        padding: var(--space-xxl);
       }
     }
   }
 
   &__action {
-    display: grid; 
+    display: flex; 
 
     &_distribute {
       &_default {
@@ -56,11 +60,11 @@
 
     &_space-a {
       &_xl {
-        padding: var(--xl);
+        padding: var(--space-xl);
       }
 
       &_xxl {
-        padding: var(--xxl);
+        padding: var(--space-xxl);
       }
     }
   }
