@@ -9,5 +9,10 @@
 
   & .image {
     height: 160px;
+    border-color: var(--default);
+  }
+
+  &__title {
+    margin-bottom: var(--space-xxxl);
   }
 }

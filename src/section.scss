@@ -1,5 +1,6 @@
 .section {
   display: block;
+  background-color: var(--default);
 
   &_indent-b {
     &_xxl {
@@ -13,13 +14,13 @@
 
   &_space-v {
     &_xxl {
-      padding-left: var(--space-xxl);
-      padding-right: var(--space-xxl);
+      padding-top: var(--space-xxl);
+      padding-bottom: var(--space-xxl);
     }
 
     &_xxxxl {
-      padding-left: var(--space-xxxxl);
-      padding-right: var(--space-xxxxl);
+      padding-top: var(--space-xxxxl);
+      padding-bottom: var(--space-xxxxl);
     }
   }
 }

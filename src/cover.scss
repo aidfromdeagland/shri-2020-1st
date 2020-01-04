@@ -1,11 +1,22 @@
 .cover {
   min-height: 472px;
+  align-self: start;
 
   &__preview {
+    width: 100%;
     margin-bottom: var(--space-l);
     
     & .image {
       height: 180px;
     }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__footer {
+    width: 100%;
   }
 }
