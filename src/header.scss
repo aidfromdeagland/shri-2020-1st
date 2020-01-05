@@ -1,6 +1,7 @@
 .header {
   display: block;
   padding: var(--space-xxxl) var(--gap);
+  background-color: var(--default);
 
   &__content {
     margin: 0 auto;
@@ -13,7 +14,6 @@
   &__logo {
     width: 179px;
     height: 34px;
-    justify-self: start;
     background-color: var(--text-primary);
   }
 }

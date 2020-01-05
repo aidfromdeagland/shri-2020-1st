@@ -1,6 +1,8 @@
 .onoffswitch {
+  --button-size: 24px;
+  --red-warning: #ff3333;
+
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   width: 97px;
   height: 32px;
@@ -8,12 +10,20 @@
   border: 2px solid var(--border);
 
   &__button {
-    width: 24px;
-    height: 24px;
+    margin-left: 0;
+    width: var(--button-size);
+    height: var(--button-size);
     background-color: var(--border);
+    clip-path: polygon(0 0, 0 20%, 0 50%, 0 100%, 100% 100%, 100% 50%, 100% 20%, 100% 0, 50% 0);
+    transition: all 0.25s;
   }
 
-  &_checked {
-    justify-content: flex-end;
+  &_checked > .onoffswitch__button {
+    margin-left: calc(100% - var(--button-size));
+  }
+
+  &:hover > .onoffswitch__button {
+    clip-path: polygon(13% 0, 0 13%, 40% 50%, 40% 100%, 60% 100%, 60% 50%, 100% 13%, 87% 0, 50% 35%);
+    background-color: var(--red-warning);
   }
 }

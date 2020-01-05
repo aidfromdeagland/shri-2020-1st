@@ -61,3 +61,23 @@
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .grid {
+    display: block;
+
+    &_row-gap {
+      &_half {
+        & > .grid__fraction:not(:first-child) {
+          margin-top: calc(var(--gap) / 2);   
+        }
+      }
+  
+      &_full {
+        & > .grid__fraction:not(:first-child) {
+          margin-top: calc(var(--gap));   
+        }
+      }
+    }
+  }
+}
