@@ -2,14 +2,16 @@
   "name": "shri-2020-task-1",
   "version": "1.0.0",
   "description": "1-st part of SHRI entry challenge",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
+  },
   "author": "Stanislau Laniuk",
   "devDependencies": {
-    "clean-css": "^4.2.1",
+    "css-loader": "^3.4.1",
+    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.0",
-    "sass": "^1.24.0",
     "sass-loader": "^8.0.0",
-    "uglify-js": "^3.7.2",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
   }

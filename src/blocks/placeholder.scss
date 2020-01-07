@@ -1,0 +1,14 @@
+.placeholder {
+  display: block;
+  background-color: var(--text-primary); 
+  //Из описания блока: "по умолчанию имеет такой же цвет фона как и цвет основного текста". Выходит, модификатор  _view_primary, определяющий цвет фона эквивалентным цвету основного текста, дублирует свойство по умолчанию
+
+  &_size_m {
+    width: 72px;
+    height: 72px;
+  }
+
+  &_view_primary {
+    background-color: var(--text-primary);
+  }
+}
