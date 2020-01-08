@@ -1,5 +1,3 @@
-'use strict';
-
 const defaultColorSelector = 'theme_color_project-default';
 const inverseColorSelector = 'theme_color_project-inverse';
 const switchSelector = 'onoffswitch';
