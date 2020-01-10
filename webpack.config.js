@@ -6,7 +6,7 @@ module.exports = {
   entry: ['./src/script.js', './src/style.scss'],
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'script.js'
+    filename: "script.js",
   },
   module: {
     rules: [

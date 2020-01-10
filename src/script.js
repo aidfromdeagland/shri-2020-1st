@@ -1,1 +1,1 @@
-import './blocks/body';
+import './blocks/body.js';
